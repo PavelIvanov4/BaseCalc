@@ -1,0 +1,134 @@
+body {
+	margin : 0;
+}
+
+h1 {
+	margin-top : 0;
+	margin-bottom : 0;
+	padding : 16px;
+	text-align : center;
+	background : black;
+	color : honeydew;
+	font : 32px Orbitron;
+}
+
+ul {
+	margin-top : 0;
+	padding : 0;
+	display : flex;
+	list-style : none;
+	justify-content : space-around;
+	box-sizing : border-box;
+}
+
+ul li {
+	font : 30px Bebas Neue;
+	border : 1px solid black;
+	padding : 6px;
+	flex-basis : 100%;
+	text-align : center;
+	cursor : pointer;
+	transition : 0.8s;
+}
+
+p {
+	font : 20px Orbitron;
+	margin-bottom : 3px;
+	margin-top : 3px;
+}
+
+#wrapper {
+	width : 500px;
+	height : 300px;
+	border : 1px solid black;
+	background : #E0E0FF;
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 70px;
+	padding : 15px;
+	box-sizing : border-box;
+}
+
+#w1 {
+	display : grid;
+	grid-template-rows : 1fr;
+	grid-template-columns : 1fr 4fr;
+	margin-top : 25px;
+	margin-bottom : 15px;
+	padding : 0 0 0 0;
+}
+
+#w2 {
+	display : grid;
+	grid-template-rows : 1fr;
+	grid-template-columns : 1fr 4fr;
+	margin-top : 25px;
+	margin-bottom : 15px;	
+}
+
+#w3 {
+	display : grid;
+	grid-template-rows : 1fr;
+	grid-template-columns : 1fr 4fr;
+	margin-top : 25px;
+	margin-bottom : 15px;	
+}
+
+#btn {
+	font : 25px Bebas Neue;
+	width : max-content;
+	padding : 6px 20px 6px 20px;
+    border : 1px solid black;
+	background : white;
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 30px;
+	cursor : pointer;
+}
+
+#box1, #box2 {
+	font : 20px IBM Plex Sans;
+	background : white;
+	border : 3px ridge black;
+}
+
+#box3 {
+	font : 20px IBM Plex Sans Semi Bold;
+}
+
+ul li:hover {
+	background : black;
+	color : aqua;
+}
+
+#btn:hover:active {
+	background : black;
+	color : aqua;
+}
+
+@font-face {
+	src : url('orbitron.ttf');
+	font-family : Orbitron;
+}
+
+@font-face {
+	src : url('bebasneue.ttf');
+	font-family : Bebas Neue;
+}
+
+@font-face {
+	src : url('ibmplexsans.ttf');
+	font-family : IBM Plex Sans;
+}
+
+@font-face {
+	src : url('ibmplexsans-sb.ttf');
+	font-family : IBM Plex Sans Semi Bold;
+}
+
+@media screen and (max-width : 520px) {
+#wrapper {
+	width : 100%;
+	margin-top : 0px;
+}
+}
