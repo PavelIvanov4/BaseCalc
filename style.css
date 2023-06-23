@@ -38,7 +38,7 @@ p {
 }
 
 #wrapper {
-	width : 80%;
+	width : 460px;
 	height : 300px;
 	border : 1px solid black;
 	background : #E0E0FF;
@@ -90,10 +90,19 @@ p {
 	font : 20px IBM Plex Sans;
 	background : white;
 	border : 3px ridge black;
+	padding-left : 6px;
+	padding-right : 6px;
+	box-sizing : border-box;
+	overflow : hidden;
+	max-height : 34px;
 }
 
 #box3 {
 	font : 20px IBM Plex Sans Semi Bold;
+	padding-left : 6px;
+	padding-right : 6px;
+	box-sizing : border-box;
+	overflow : hidden;
 }
 
 ul li:hover {
@@ -129,6 +138,22 @@ ul li:hover {
 @media screen and (max-width : 520px) {
 #wrapper {
 	width : 100%;
-	margin-top : 0px;
+	margin-top : 30px;
 }
+}
+
+@media screen and (max-width : 420px) {
+ul li {
+	font-size : 24px;
+}
+
+#w1, #w2, #w3 {
+	grid-template-columns : 1fr 2.5fr;
+}
+}
+
+@media screen and (max-width : 350px) {
+ul li {
+	font-size : 22px;
+ }
 }
